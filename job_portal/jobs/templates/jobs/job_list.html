@@ -1,0 +1,11 @@
+<!-- job_list.html -->
+<h2>Job Listings</h2>
+<ul>
+    {% for job in jobs %}
+        <li>
+            <a href="#">{{ job.title }}</a> - {{ job.location }} <br>
+            {{ job.description }} <br>
+            <strong>Salary:</strong> {{ job.salary }}
+        </li>
+    {% endfor %}
+</ul>

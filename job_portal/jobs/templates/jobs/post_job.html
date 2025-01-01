@@ -1,0 +1,7 @@
+<!-- post_job.html -->
+<h2>Post a Job</h2>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Post Job</button>
+</form>
